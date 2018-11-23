@@ -1,0 +1,772 @@
+WARNING:fake_useragent:Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.11
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 727, in create_connection
+    raise err
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fake_useragent\utils.py", line 166, in load
+    verify_ssl=verify_ssl,
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fake_useragent\utils.py", line 122, in get_browser_versions
+    verify_ssl=verify_ssl,
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+ERROR:root:Except on get_username_by_user_id
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 436, in get_username_by_user_id
+    all_data = json.loads(r.text)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ralph Lemaire\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\instabot.py", line 646, in follow
+    insert_username(self, user_id=user_id, username=username)
+  File "C:\Users\Ralph Lemaire\Desktop\instabot.py-master\src\sql_updates.py", line 81, in insert_username
+    VALUES('"+user_id+"','"+username+"','"+ str(now) +"')")
+TypeError: can only concatenate str (not "bool") to str
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Resetting dropped connection: i.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): ink361.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): www.instagram.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): i.instagram.com
